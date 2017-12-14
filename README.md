@@ -1,3 +1,3 @@
-Deploy build files here.
+Build files here.
 
-Source files under playground/web/sharu95.github.io
+Source files under the [website-repo](https://github.com/Sharu95/website)
