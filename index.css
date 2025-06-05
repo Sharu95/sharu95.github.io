@@ -17,6 +17,16 @@ body {
     margin: 40px auto;
     overflow: hidden;
     background: #f9E1a8;
+    transform: translateY(100vw);
+    opacity: 0;
+    animation: slideInFromBottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes slideInFromBottom {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .profile-title {
