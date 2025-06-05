@@ -1,0 +1,134 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f7f7f7;
+    font-family: 'Raleway', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    overflow: hidden;
+    background: #f9E1a8;
+}
+
+.profile-title {
+    color: #f9E1a8;
+}
+
+.profile-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.profile-right {
+    background: #fff;
+    flex: 1;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-right h1 {
+    margin: 0 0 16px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.profile-right p {
+    margin: 0 0 32px 0;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.profile-links {
+    margin-top: auto;
+    display: flex;
+    gap: 16px;
+}
+
+.profile-link-btn {
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.profile-link-btn:hover {
+    background: #f9E1a8;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-left, .profile-right {
+        padding: 24px 16px;
+        text-align: center;
+    }
+    .profile-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.profile-spacer {
+    border-radius: 5px;
+    border: 2px solid #f9e1a8;
+    margin: 30px 0 30px 0;
+    width: 100px;
+    align-self: center;
+}
+
+.profile-social {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #222;
+    font-size: 1.5rem;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.profile-social a:hover {
+    background: #f9E1a8;
+    color: #000;
+}
